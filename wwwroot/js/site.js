@@ -2,6 +2,3 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
-function getDate() {
-    document.getElementById('date').innerHTML = Date();
-}

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace NetworkMonitoring.Pages
 {
-    public class graphsModel : PageModel
+    public class GraphsModel : PageModel
     {
-        private readonly ILogger<graphsModel> _logger;
+        private readonly ILogger<GraphsModel> _logger;
 
-        public graphsModel(ILogger<graphsModel> logger)
+        public GraphsModel(ILogger<GraphsModel> logger)
         {
             _logger = logger;
         }

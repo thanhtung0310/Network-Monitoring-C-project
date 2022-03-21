@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\Documents\\GitHub\\NetworkMonitoring\\NetworkMonitoring.csproj": {}
+    "D:\\Tung\\Study\\ĐATN\\đồ án\\NetworkMonitoring\\NetworkMonitoring.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\Documents\\GitHub\\NetworkMonitoring\\NetworkMonitoring.csproj": {
+    "D:\\Tung\\Study\\ĐATN\\đồ án\\NetworkMonitoring\\NetworkMonitoring.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\Documents\\GitHub\\NetworkMonitoring\\NetworkMonitoring.csproj",
+        "projectUniqueName": "D:\\Tung\\Study\\ĐATN\\đồ án\\NetworkMonitoring\\NetworkMonitoring.csproj",
         "projectName": "NetworkMonitoring",
-        "projectPath": "C:\\Users\\chris\\Documents\\GitHub\\NetworkMonitoring\\NetworkMonitoring.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\Documents\\GitHub\\NetworkMonitoring\\obj\\",
+        "projectPath": "D:\\Tung\\Study\\ĐATN\\đồ án\\NetworkMonitoring\\NetworkMonitoring.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Tung\\Study\\ĐATN\\đồ án\\NetworkMonitoring\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
