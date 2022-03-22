@@ -38,23 +38,12 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - NetworkMonitoring - <a asp-area="" asp-page="/Privacy">Privacy</a>
-            <p id="date"></p>
-
-            <script>
-                const d = new Date();
-                document.getElementById("date").innerHTML = d;
-            </script>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -63,3 +52,14 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+<!--<footer class="border-top footer text-muted">
+    <div class="container">
+        <p>code and design by Thanh Tung</p>-->
+        @*<p id="date"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>*@
+    <!--</div>
+</footer>-->
