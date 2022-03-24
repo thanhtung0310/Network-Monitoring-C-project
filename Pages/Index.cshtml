@@ -4,7 +4,19 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Introduction about this program.</p>
-</div>
+<body>
+    <div class="row">
+        <div class="column title">
+            <h5>@ViewData["Title"]</h5>
+        </div>
+        <div class="column infoBar">
+            Logged in as
+            <span class="user usermenuup" id="user">admin</span>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Introduction about this program.</p>
+    </div>
+</body>

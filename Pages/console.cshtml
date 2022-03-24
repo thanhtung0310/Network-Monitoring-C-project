@@ -17,31 +17,93 @@
 
     <div class="wrapper">
         <div class="sidebar">
-            <ul>
-                <li><i class="tm-nav-item"></i>Main Console</li>
-                <li><i class="tm-nav-item"></i>Create</li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>New Device</a></li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>New Graphs</a></li>
-                <li><i class="tm-nav-item"></i>Management</li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>Devices</a></li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>Graphs</a></li>
-                <li><i class="tm-nav-item"></i>Templates</li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>Devices</a></li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>Graphs</a></li>
-                <li><i class="tm-nav-item"></i>Configuration</li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>Settings</a></li>
-                <li><a href="#"><i class="tm-nav-item-low"></i>Users</a></li>
-                
-            </ul> 
+            <button class="tm-nav-item tablinks" onclick="openContent(event,'introduction')" id="defaultOpen">Main Console</button>
+            <button class="tm-nav-item">Create</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'newDevice')">New Device</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'newGraph')">New Graph</button>
+            <button class="tm-nav-item">Management</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'mangDevice')">Devices</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'mangGraph')">Graphs</button>
+            <button class="tm-nav-item">Templates</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'tplDevice')">Devices</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'tplGraph')">Graphs</button>
+            <button class="tm-nav-items">Configuration</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'settings')">Settings</button>
+            <button class="tm-nav-item-low tablinks" onclick="openContent(event,'users')">Users</button>
         </div>
-    
-        <div class="main_content">
-            <div class="header">Welcome!! Have a nice day.</div>  
+
+        <div id="newDevice" class="maincontent">
+            <div class="header">Create new Device</div>
             <div class="info">
-              <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
-              <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
-              <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+                <div>Create new Device</div>
+                <button>Create new Device</button>
             </div>
         </div>
+
+        <div id="newGraph" class="maincontent">
+            <div class="header">Create new Graph</div>
+            <div class="info">
+                <div>Create new Graph</div>
+                <button>Create new Graph</button>
+            </div>
+        </div>
+
+        <div id="mangDevice" class="maincontent">
+            <div class="header">Manage information of Device</div>
+            <div class="info">
+                <div>Manage Device</div>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="mangGraph" class="maincontent">
+            <div class="header">Manage information of Graph</div>
+            <div class="info">
+                <div>Manage Graph</div>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="tplDevice" class="maincontent">
+            <div class="header">Make template for Device</div>
+            <div class="info">
+                <div>Template of Device</div>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="tplGraph" class="maincontent">
+            <div class="header">Make template for Graph</div>
+            <div class="info">
+                <div>Template of Graph</div>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="settings" class="maincontent">
+            <div class="header">Settings</div>
+            <div class="info">
+                <div>Settings</div>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="users" class="maincontent">
+            <div class="header">Users</div>
+            <div class="info">
+                <div>Manage users</div>
+                <button>Save</button>
+            </div>
+        </div>
+
+        <div id="introduction" class="maincontent">
+            <div class="header">Welcome!! Have a nice day.</div>
+            <div class="info">
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+            </div>
+        </div>
+
     </div>
 </body>

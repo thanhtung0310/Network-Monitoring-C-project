@@ -3,6 +3,20 @@
 @{
     ViewData["Title"] = "About";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p> page about me <a href="https://portfolio0fthanhtung.w3spaces.com/" target="_blank" rel="noopener noreferrer">My Web Portfolio</a> </p>
+<body>
+    <div class="row">
+        <div class="column title">
+            <h5>@ViewData["Title"]</h5>
+        </div>
+        <div class="column infoBar">
+            Logged in as
+            <span class="user usermenuup" id="user">admin</span>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <p>This page about me <a href="https://portfolio0fthanhtung.w3spaces.com/" target="_blank" rel="noopener noreferrer">My Web Portfolio</a>.</p>
+    </div>
+</body>

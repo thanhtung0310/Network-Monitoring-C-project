@@ -680,7 +680,6 @@ D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\ru\Micro
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.csproj.AssemblyReference.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.GeneratedMSBuildEditorConfig.editorconfig
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.AssemblyInfoInputs.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.AssemblyInfo.cs
@@ -712,3 +711,6 @@ D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkM
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.dll
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.pdb
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.genruntimeconfig.cache
+D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.csproj.AssemblyReference.cache
+\\THINKPADS230\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.dll
+\\THINKPADS230\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.pdb
