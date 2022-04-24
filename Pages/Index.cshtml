@@ -9,14 +9,28 @@
         <div class="column title">
             <h5>@ViewData["Title"]</h5>
         </div>
-        <div class="column infoBar">
+        @*<div class="column infoBar">
             Logged in as
-            <span class="user usermenuup" id="user">admin</span>
-        </div>
+            <span class="user usermenuup" id="user"><a href="#">admin</a></span>
+        </div>*@
     </div>
 
     <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Introduction about this program.</p>
+        <h1 class="display-4">Welcome to NetworkMonitoring</h1>
+        <h3>Version 1.0</h3>
+        <i>About this program</i>
+        <p>
+            This program is desgined to be a complete graphing solution based on RRDtool's framework
+            and also cacti's function. Its goal is to visualize what SNMP-enabled devices work and
+            how they can be managed by a system web page and service. In this way, network administrator
+            can create devices and make meaning graphs based on the data sent from such devices by just a few clicks.
+        </p>
+        <p>
+            If you want to know more about the frameworks, just click <a href="https://www.cacti.net/" target="_blank"
+                rel="noopener noreferrer">cacti</a> and
+            <a href="https://oss.oetiker.ch/rrdtool/" target="_blank" rel="noopener noreferrer">RRDtool</a> for more
+            information,
+            support and updates.
+        </p>
     </div>
 </body>

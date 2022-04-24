@@ -9,15 +9,18 @@
         <div class="column title">
             <h5>@ViewData["Title"]</h5>
         </div>
-        <div class="column infoBar">
-            Logged in as 
-            <span class="user usermenuup" id="user">admin</span>
-        </div>
+        @*<div class="column infoBar">
+            Logged in as
+            <span class="user usermenuup" id="user"><a href="#">admin</a></span>
+        </div>*@
     </div>
 
     <div class="wrapper">
         <div class="sidebar">
-            <button class="tm-nav-item tablinks" onclick="openContent(event,'introduction')" id="defaultOpen">Main Console</button>
+            <button class="tm-nav-item tablinks" onclick="openContent(event,'introduction')" id="defaultOpen">
+                Main
+                Console
+            </button>
             <button class="tm-nav-item">Create</button>
             <button class="tm-nav-item-low tablinks" onclick="openContent(event,'newDevice')">New Device</button>
             <button class="tm-nav-item-low tablinks" onclick="openContent(event,'newGraph')">New Graph</button>
@@ -35,55 +38,482 @@
         <div id="newDevice" class="maincontent">
             <div class="header">Create new Device</div>
             <div class="info">
-                <div>Create new Device</div>
-                <button>Create new Device</button>
+                <form action="/" method="post">
+                    <div class="header" style="background-color: grey; color: white;">General Device Options</div>
+                    Description: <input type="text" /> <br /> <br />
+                    Hostname: <input type="text" /> <br /> <br />
+                    Location: <input list="locations" /> <br /> <br />
+                    <datalist id="locations">
+                        <option value="None"></option>
+                        <option value=""></option>
+                        <option value="0"></option>
+                    </datalist>
+                    Poller Association: <input list="pollers" /> <br /> <br />
+                    <datalist id="pollers">
+                        <option value="Main Poller"></option>
+                    </datalist>
+                    Device Site Association: <input list="Dsites" /> <br /> <br />
+                    <datalist id="Dsites">
+                        <option value="None"></option>
+                        <option value="Core"></option>
+                        <option value="Edge"></option>
+                    </datalist>
+                    Device Template: <input list="Dtemplates" /> <br /> <br />
+                    <datalist id="Dtemplates">
+                        <option value="None"></option>
+                        <option value="Cacti Stats"></option>
+                        <option value="Cisco Router"></option>
+                        <option value="Generic SNMP Device"></option>
+                        <option value="Local Linux Machine"></option>
+                        <option value="Net-SNMP Device"></option>
+                        <option value="Windows Device"></option>
+                    </datalist>
+                    Number of Collection Threads: <input list="collThreads" /> <br /> <br />
+                    <datalist id="collThreads">
+                        <option value="1 Thread (default)"></option>
+                        <option value="2 Threads"></option>
+                        <option value="3 Threads"></option>
+                        <option value="4 Threads"></option>
+                        <option value="5 Threads"></option>
+                    </datalist>
+                    Disabled Device: <input type="checkbox">
+                    <div class="header" style="background-color: grey; color: white;">SNMP Options</div>
+                    SNMP Version: <input list="SNMPVers" /> <br /> <br />
+                    <datalist id="SNMPVers">
+                        <option value="Not in use"></option>
+                        <option value="Version 1"></option>
+                        <option value="Version 2"></option>
+                        <option value="Version 3"></option>
+                    </datalist>
+                    SNMP Community String: <input type="text" value="public" /> <br /> <br />
+                    SNMP Port: <input type="text" value="161" /> <br /> <br />
+                    SNMP Timeout: <input type="text" value="500" /> <br /> <br />
+                    Maximum OIDs per GetRequest: <input list="OIDs" /> <br /> <br />
+                    <datalist id="OIDs">
+                        <option value="1 OID"></option>
+                        <option value="2 OID's"></option>
+                        <option value="3 OID's"></option>
+                        <option value="4 OID's"></option>
+                        <option value="5 OID's"></option>
+                        <option value="10 OID's"></option>
+                    </datalist>
+                    Bulk Walk Maximum Repititions: <input list="Bulks" /> <br /> <br />
+                    <datalist id="Bulks">
+                        <option value="Auto Detect on Re-index"></option>
+                        <option value="Auto Detect/Set on First re-index"></option>
+                        <option value="1 Repitition"></option>
+                        <option value="2 Repititions"></option>
+                        <option value="3 Repititions"></option>
+                        <option value="4 Repititions"></option>
+                        <option value="5 Repititions"></option>
+                        <option value="10 Repititions"></option>
+                    </datalist>
+                    <div class="header" style="background-color: grey; color: white;">
+                        Availability/Reachability Options
+                    </div>
+                    Downed Device Detection: <input list="downedDDs" /> <br /> <br />
+                    <datalist id="downedDDs">
+                        <option value="None"></option>
+                        <option value="PING and SNMP Uptime"></option>
+                        <option value="SNMP Uptime"></option>
+                        <option value="Ping"></option>
+                        <option value="Ping or SNMP Uptime"></option>
+                        <option value="SNMP Desc"></option>
+                        <option value="SNMP GetNext"></option>
+                    </datalist>
+                    Ping Method: <input list="pingMs" /> <br /> <br />
+                    <datalist id="pingMs">
+                        <option value="ICMP Ping"></option>
+                        <option value="TCP Ping"></option>
+                        <option value="UDP Ping"></option>
+                    </datalist>
+                    Ping Port: <input type="text" value="23" /> <br /> <br />
+                    Ping Timeout Value: <input type="text" value="400" /> <br /> <br />
+                    Ping Retry Count: <input type="text" value="1" /> <br /> <br />
+                    <div class="header" style="background-color: grey; color: white;">Additional Options</div>
+                    Notes: <input type="text" style="height: 200px;" /> <br /> <br />
+                    External ID: <input type="text" /> <br /> <br />
+                    <input type="button" name="btnCancel" value="Cancel" />
+                    <input type="button" name="btnCreateD" value="Create Device" />
+                </form>
             </div>
         </div>
 
         <div id="newGraph" class="maincontent">
             <div class="header">Create new Graph</div>
             <div class="info">
-                <div>Create new Graph</div>
-                <button>Create new Graph</button>
+                <form action="/" method="post">
+                    <div class="header" style="background-color: grey; color: white;">New graphs for</div>
+                    Devices: <input list="deviceNames" />
+                    <datalist id="deviceNames">
+                        <option value="Local Linux Machine"></option>
+                        <option value="Windows 10"></option>
+                        <option value="Windows 11"></option>
+                    </datalist>
+                    Graph Types: <input list="graphTypes" />
+                    <datalist id="graphTypes">
+                        <option value="All types"></option>
+                        <option value="Graph Template Based"></option>
+                        <option value="Unix - Get Mounted Partitions"></option>
+                    </datalist>
+                    <input type="button" name="btnGo" value="Go" />
+                    <input type="button" name="btnClear" value="Clear" />
+                    <input type="button" name="btnSave" value="Save" /> <br /> <br />
+                    Search: <input type="text" />
+                    Rows: <input list="rows" /> <br /> <br />
+                    <datalist id="rows">
+                        <option value="Default"></option>
+                        <option value="10 Rows"></option>
+                        <option value="15 Rows"></option>
+                        <option value="20 Rows"></option>
+                    </datalist>
+                    <div class="header" style="background-color: grey; color: white;">Graph Templates</div>
+                    <table>
+                        <tr>
+                            <th>Graph Name</th>
+                            <th>ID</th>
+                            <th>Source Type</th>
+                            <th>Source Name</th>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Load Average</a></td>
+                            <td>1</td>
+                            <td>Template</td>
+                            <td><a href="#">Unix - Load Average</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Logged in Users</a></td>
+                            <td>2</td>
+                            <td>Template</td>
+                            <td><a href="#">Unix - Logged in Users</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Memory Usage</a></td>
+                            <td>3</td>
+                            <td>Template</td>
+                            <td><a href="#">Linux - Memory Usage</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Processes</a></td>
+                            <td>4</td>
+                            <td>Template</td>
+                            <td><a href="#">Unix - Processes</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Windows 11 Laptop - Load Average</a></td>
+                            <td>5</td>
+                            <td>Template</td>
+                            <td><a href="#">Host MIB - Load Average</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Windows 11 Laptop - Logged in Users</a></td>
+                            <td>6</td>
+                            <td>Template</td>
+                            <td><a href="#">Host MIB - Logged in Users</a></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
         <div id="mangDevice" class="maincontent">
             <div class="header">Manage information of Device</div>
             <div class="info">
-                <div>Manage Device</div>
-                <button>Save</button>
+                <form action="/" method="post">
+                    <div class="header" style="background-color: grey; color: white;">Devices</div>
+                    Site: <input list="Sites" />
+                    <datalist id="Sites">
+                        <option value="Any"></option>
+                        <option value="None"></option>
+                        <option value="Core"></option>
+                        <option value="Edge"></option>
+                    </datalist>
+                    Data Collector: <input list="dataCollectors" />
+                    <datalist id="dataCollectors">
+                        <option value="Any"></option>
+                        <option value="Main Poller"></option>
+                    </datalist>
+                    Template: <input list="templates" /> <br /> <br />
+                    <datalist id="templates">
+                        <option value="Any"></option>
+                        <option value="None"></option>
+                        <option value="Cact Stats"></option>
+                        <option value="Cisco Router"></option>
+                        <option value="Generic SNMP Device"></option>
+                        <option value="Local Linux Machine"></option>
+                        <option value="Net-SNMP Device"></option>
+                        <option value="Windows Device"></option>
+                    </datalist>
+                    Location: <input list="locations" />
+                    <datalist id="templates">
+                        <option value="All"></option>
+                        <option value=""></option>
+                        <option value="Undefined"></option>
+                    </datalist>
+                    <input type="button" name="btnGo" value="Go" />
+                    <input type="button" name="btnClear" value="Clear" />
+                    <input type="button" name="btnExport" value="Export" /> <br /> <br />
+                    Search: <input type="text" />
+                    Status: <input list="status" /> <br /> <br />
+                    <datalist id="status">
+                        <option value="Any"></option>
+                        <option value="Default"></option>
+                        <option value="Disabled"></option>
+                        <option value="Not"></option>
+                        <option value="Up"></option>
+                        <option value="Down"></option>
+                        <option value="Recovering"></option>
+                        <option value="Unknown"></option>
+                    </datalist>
+                    Devices: <input list="devices" /> <br /> <br />
+                    <datalist id="devices">
+                        <option value="10"></option>
+                        <option value="15"></option>
+                        <option value="20"></option>
+                        <option value="25"></option>
+                        <option value="30"></option>
+                    </datalist>
+                    <div class="header" style="background-color: grey; color: white;">All devices</div>
+                    <table>
+                        <tr>
+                            <th>Device Description</th>
+                            <th>Hostname</th>
+                            <th>ID</th>
+                            <th>Graph</th>
+                            <th>Data Sources</th>
+                            <th>Status</th>
+                            <th>In State</th>
+                            <th>Working Time</th>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine</a></td>
+                            <td>localhost</td>
+                            <td>1</td>
+                            <td style="color: blue;"><a href="#">4</a></td>
+                            <td style="color: blue;"><a href="#">5</a></td>
+                            <td style="color: green;">Up</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Windows 11 Laptop</a></td>
+                            <td>192.169.100.1</td>
+                            <td>2</td>
+                            <td style="color: blue;"><a href="#">4</a></td>
+                            <td style="color: blue;"><a href="#">4</a></td>
+                            <td style="color: green;">Up</td>
+                            <td>3h:15m</td>
+                            <td>2h:43m</td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
         <div id="mangGraph" class="maincontent">
             <div class="header">Manage information of Graph</div>
             <div class="info">
-                <div>Manage Graph</div>
-                <button>Save</button>
+                <form action="/" method="post">
+                    <div class="header" style="background-color: grey; color: white;">Graphs Management</div>
+                    Site: <input list="Sites" />
+                    <datalist id="Sites">
+                        <option value="Any"></option>
+                        <option value="None"></option>
+                        <option value="Core"></option>
+                        <option value="Edge"></option>
+                    </datalist>
+                    Data Collector: <input list="dataCollectors" />
+                    <datalist id="dataCollectors">
+                        <option value="Any"></option>
+                        <option value="Main Poller"></option>
+                    </datalist>
+                    Template: <input list="templates" /> <br /> <br />
+                    <datalist id="templates">
+                        <option value="Any"></option>
+                        <option value="None"></option>
+                        <option value="Cact Stats"></option>
+                        <option value="Cisco Router"></option>
+                        <option value="Generic SNMP Device"></option>
+                        <option value="Local Linux Machine"></option>
+                        <option value="Net-SNMP Device"></option>
+                        <option value="Windows Device"></option>
+                    </datalist>
+                    Location: <input list="locations" />
+                    <datalist id="templates">
+                        <option value="All"></option>
+                        <option value=""></option>
+                        <option value="Undefined"></option>
+                    </datalist>
+                    <input type="button" name="btnGo" value="Go" />
+                    <input type="button" name="btnClear" value="Clear" /> <br /> <br />
+                    Search: <input type="text" />
+                    Graphs: <input list="graphs" /> <br /> <br />
+                    <datalist id="graphs">
+                        <option value="10"></option>
+                        <option value="15"></option>
+                        <option value="20"></option>
+                        <option value="25"></option>
+                        <option value="30"></option>
+                    </datalist>
+                    <div class="header" style="background-color: grey; color: white;">All graphs</div>
+                    <table>
+                        <tr>
+                            <th>Graph Name</th>
+                            <th>ID</th>
+                            <th>Source Type</th>
+                            <th>Source Name</th>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Load Average</a></td>
+                            <td>1</td>
+                            <td>Template</td>
+                            <td><a href="#">Unix - Load Average</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Logged in Users</a></td>
+                            <td>2</td>
+                            <td>Template</td>
+                            <td><a href="#">Unix - Logged in Users</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Memory Usage</a></td>
+                            <td>3</td>
+                            <td>Template</td>
+                            <td><a href="#">Linux - Memory Usage</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Local Linux Machine - Processes</a></td>
+                            <td>4</td>
+                            <td>Template</td>
+                            <td><a href="#">Unix - Processes</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Windows 11 Laptop - Load Average</a></td>
+                            <td>5</td>
+                            <td>Template</td>
+                            <td><a href="#">Host MIB - Load Average</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Windows 11 Laptop - Logged in Users</a></td>
+                            <td>6</td>
+                            <td>Template</td>
+                            <td><a href="#">Host MIB - Logged in Users</a></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
         <div id="tplDevice" class="maincontent">
             <div class="header">Make template for Device</div>
             <div class="info">
-                <div>Template of Device</div>
-                <button>Save</button>
+                <form>
+                    Search: <input type="text" /> <br /> <br />
+                    Device Templates: <input list="Dtemplates" /> <br /> <br />
+                    <datalist id="Dtemplates">
+                        <option value="Default"></option>
+                        <option value="10"></option>
+                        <option value="15"></option>
+                        <option value="16"></option>
+                        <option value="17"></option>
+                        <option value="18"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                    </datalist>
+                    <input type="checkbox"> Has Devices
+                    <button>Go</button>
+                    <button>Clear</button> <br /> <br />
+                    <table>
+                        <tr>
+                            <th>Device Template Name</th>
+                            <th>ID</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats</a></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cisco Router</a></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Generic SNMP Device</a></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Local Linux Machine</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Net-SNMP Device</a></td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Windows Device</a></td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
         <div id="tplGraph" class="maincontent">
             <div class="header">Make template for Graph</div>
             <div class="info">
-                <div>Template of Graph</div>
-                <button>Save</button>
+                <form>
+                    Search: <input type="text" /> <br /> <br />
+                    Graph Templates: <input list="Gtemplates" /> <br /> <br />
+                    <datalist id="Gtemplates">
+                        <option value="Default"></option>
+                        <option value="10"></option>
+                        <option value="15"></option>
+                        <option value="16"></option>
+                        <option value="17"></option>
+                        <option value="18"></option>
+                        <option value="19"></option>
+                        <option value="20"></option>
+                    </datalist>
+                    <input type="checkbox"> Has Graphs
+                    <button>Go</button>
+                    <button>Clear</button> <br /> <br />
+                    <table>
+                        <tr>
+                            <th>Graph Template Name</th>
+                            <th>ID</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats - Boost Average Row Size</a></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats - Boost Memory</a></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats - Boost Records</a></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats - Boost Runtime</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats - Boost Average Row Size</a></td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cacti Stats - Boost Memory</a></td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
         <div id="settings" class="maincontent">
             <div class="header">Settings</div>
             <div class="info">
-                <div>Settings</div>
+                <div>Program settings</div>
                 <button>Save</button>
             </div>
         </div>
@@ -91,19 +521,53 @@
         <div id="users" class="maincontent">
             <div class="header">Users</div>
             <div class="info">
-                <div>Manage users</div>
+                <div>Manage users information</div>
+                <ul>
+                    <li>Add new user</li>
+                    <li>Change users' information</li>
+                    <li>Delete user</li>
+                </ul>
                 <button>Save</button>
             </div>
         </div>
 
         <div id="introduction" class="maincontent">
-            <div class="header">Welcome!! Have a nice day.</div>
+            <div class="header">Welcome to the Main Console!</div>
             <div class="info">
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+                <div>
+                    Your are now logged into <a href="Index">NetworkMonitoring</a>. You can follow these basic steps to
+                    get
+                    started.
+                </div>
+                <ul>
+                    <li><a href="#" onclick="openContent(event,'newDevice')">Create devices</a> for network</li>
+                    <li><a href="#" onclick="openContent(event,'newGraph')">Create graphs</a> for your new devices</li>
+                    <li><a href="Graphs">View</a> your new graphs</li>
+                </ul>
             </div>
         </div>
 
     </div>
 </body>
+
+<style>
+    input[type=text] {
+        width: 500px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>

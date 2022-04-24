@@ -355,6 +355,8 @@ C:\Users\chris\Documents\GitHub\NetworkMonitoring\obj\Debug\netcoreapp3.1\Networ
 C:\Users\chris\Documents\GitHub\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\console.cshtml.g.cs
 C:\Users\chris\Documents\GitHub\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\graphs.cshtml.g.cs
 C:\Users\chris\Documents\GitHub\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\About.cshtml.g.cs
+\\THINKPADS230\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.dll
+\\THINKPADS230\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.pdb
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\NetworkMonitoring.exe
@@ -680,6 +682,7 @@ D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\ru\Micro
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.csproj.AssemblyReference.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.GeneratedMSBuildEditorConfig.editorconfig
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.AssemblyInfoInputs.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.AssemblyInfo.cs
@@ -689,15 +692,13 @@ D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkM
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.RazorAssemblyInfo.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.RazorAssemblyInfo.cs
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\staticwebassets\NetworkMonitoring.StaticWebAssets.Manifest.cache
-D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\staticwebassets\NetworkMonitoring.StaticWebAssets.xml
-D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\scopedcss\bundle\NetworkMonitoring.styles.css
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.TagHelpers.input.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.TagHelpers.output.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.RazorCoreGenerate.cache
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\About.cshtml.g.cs
-D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\console.cshtml.g.cs
+D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Console.cshtml.g.cs
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\graphs.cshtml.g.cs
+D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Graphs.cshtml.g.cs
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
@@ -711,6 +712,5 @@ D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkM
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.dll
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.pdb
 D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.genruntimeconfig.cache
-D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.csproj.AssemblyReference.cache
-\\THINKPADS230\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.dll
-\\THINKPADS230\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\NetworkMonitoring.pdb
+D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\obj\Debug\netcoreapp3.1\Razor\Pages\Terms.cshtml.g.cs
+D:\Tung\Study\ĐATN\đồ án\NetworkMonitoring\bin\Debug\netcoreapp3.1\NetworkMonitoring.StaticWebAssets.xml
