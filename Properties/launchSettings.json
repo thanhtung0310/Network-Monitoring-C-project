@@ -18,7 +18,7 @@
     },
     "NetworkMonitoring": {
       "commandName": "Project",
-      "launchBrowser": false,
+      "launchBrowser": true,
       "applicationUrl": "https://localhost:1311;http://localhost:1310",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
