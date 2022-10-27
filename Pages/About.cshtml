@@ -3,7 +3,27 @@
 @{
     ViewData["Title"] = "About";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p> page about me <a href="https://portfolio0fthanhtung.w3spaces.com/" target="_blank" rel="noopener noreferrer">My Web Portfolio</a> </p>
-<iframe id="frame" src="https://portfolio0fthanhtung.w3spaces.com/" target="_blank" rel="noopener noreferrer" width="800" height="500"></iframe><br>
+<body>
+    <div class="row">
+        <div class="column title" id="pageTitle">
+            <h5>@ViewData["Title"]</h5>
+        </div>
+        @*<div class="column infoBar">
+            Logged in as
+            <span class="user usermenuup" id="user"><a href="#">admin</a></span>
+        </div>*@
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <i>About us</i>
+        <p>
+            Hi! My name is Phan Thanh Tung. Currently, I'm a senior in Information Technology 
+            and I'm majoring in Information Assurance. I love to do research about Security and 
+            also new Technology and therefore, I choose this topic to show what I have researched and made.
+        </p>
+        <p>This page about me <a href="https://portfolio0fthanhtung.w3spaces.com/" target="_blank" rel="noopener noreferrer">My Web Portfolio</a>.</p>
+        <iframe href="https://portfolio0fthanhtung.w3spaces.com/"></iframe>
+    </div>
+</body>

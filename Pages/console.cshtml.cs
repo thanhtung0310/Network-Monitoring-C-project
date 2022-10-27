@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace NetworkMonitoring.Pages
 {
-    public class consoleModel : PageModel
+    public class ConsoleModel : PageModel
     {
-        private readonly ILogger<consoleModel> _logger;
+        private readonly ILogger<ConsoleModel> _logger;
 
-        public consoleModel(ILogger<consoleModel> logger)
+        public ConsoleModel(ILogger<ConsoleModel> logger)
         {
             _logger = logger;
         }

@@ -1,8 +1,22 @@
 ﻿@page
-@model graphsModel
+@model GraphsModel
 @{
-    ViewData["Title"] = "graphs";
+    ViewData["Title"] = "Graphs";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p> page is used to see the overall graphs </p>
+<body>
+    <div class="row">
+        <div class="column title">
+            <h5>@ViewData["Title"]</h5>
+        </div>
+        @*<div class="column infoBar">
+            Logged in as
+            <span class="user usermenuup" id="user"><a href="#">admin</a></span>
+        </div>*@
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <p>This page is used to see the overall graphs.</p>
+    </div>
+</body>

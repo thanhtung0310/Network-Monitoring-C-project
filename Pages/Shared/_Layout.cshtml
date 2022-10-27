@@ -22,10 +22,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/console">console</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Console">Console</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/graphs">graphs</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Graphs">Graphs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
@@ -33,28 +33,20 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Terms">Terms and Conditions</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - NetworkMonitoring - <a asp-area="" asp-page="/Privacy">Privacy</a>
-            <p id="date"></p>
-
-            <script>
-                const d = new Date();
-                document.getElementById("date").innerHTML = d;
-            </script>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -63,3 +55,13 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+@*<footer class="border-top footer text-muted">
+    <div class="container">
+        <p id="date"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>
+    </div>
+</footer>*@
