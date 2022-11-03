@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Enum\" />
+    <Folder Include="NetworkMonitoring.BL\Services\Impls\" />
+    <Folder Include="NetworkMonitoring.BL\Services\Interfaces\" />
+    <Folder Include="NetworkMonitoring.Data\Services\Impls\" />
+    <Folder Include="NetworkMonitoring.Data\Services\Interfaces\" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
