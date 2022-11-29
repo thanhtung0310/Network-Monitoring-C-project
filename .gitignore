@@ -575,3 +575,11 @@ MigrationBackup/
 # End of https://www.gitignore.io/api/git,rider,dotnetcore,aspnetcore,visualstudio
 appsettings.*.json
 !appsettings.Test.json
+
+# custom
+obj/
+bin/
+obj/NetworkMonitoring.csproj.nuget.*.json
+obj/NetworkMonitoring.csproj.nuget.*.props
+obj/projects.*.json
+obj/projects.*.cache
