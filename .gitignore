@@ -579,5 +579,7 @@ appsettings.*.json
 # custom
 obj/
 bin/
-obj/NetworkMonitoring.csproj.nuget.*
-obj/projects.*
+obj/NetworkMonitoring.csproj.nuget.*.json
+obj/NetworkMonitoring.csproj.nuget.*.props
+obj/projects.*.json
+obj/projects.*.cache

@@ -7,13 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Content Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.10" />
     <PackageReference Include="MySql.Data" Version="8.0.31" />
     <PackageReference Include="MySql.Web" Version="8.0.31" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Enum\" />
     <Folder Include="NetworkMonitoring.BL\Services\Impls\" />
     <Folder Include="NetworkMonitoring.BL\Services\Interfaces\" />
     <Folder Include="Pages\Management\" />
